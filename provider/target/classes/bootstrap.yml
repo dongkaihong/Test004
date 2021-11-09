@@ -1,0 +1,19 @@
+server:
+  port: 3006
+
+spring:
+  application:
+    name: provider
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.5:8848
+        group: GROUP
+        namespace: d2045788-03e5-4447-98cd-22957daf7aee
+      config:
+        file-extension: yaml
+        server-addr: 192.168.1.5:8848
+        group: GROUP
+        namespace: d2045788-03e5-4447-98cd-22957daf7aee
